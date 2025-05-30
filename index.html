@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Human Performance Solutions</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Responsive Header with Hamburger</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="#">
-          <span class="text-blue">Human Performance</span>
-          <span class="text-gold">Solutions</span>
-        </a>
-      </div>
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#conference">Conference</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-        <a href="#login">Login</a>
-        <a href="#register" class="btn-register">Register Now</a>
-      </div>
-    </div>
-  </nav>
 
-  <header class="hero">
-    <h1>Exhibit at Africa's Premier HR &amp; Leadership Conference</h1>
-    <p>Showcase your organization to 350+ distinguished HR leaders, executives, and business coaches from across Africa</p>
+  <header>
+    <h1 tabindex="0">ACCESSIBILITY</h1>
+
+    <nav class="desktop-menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

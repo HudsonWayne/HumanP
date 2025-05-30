@@ -1,95 +1,69 @@
-/* Reset and base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Navigation Bar */
-.navbar {
-  background-color: white;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+header {
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
 }
 
-.logo a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
+h1 {
+  font-size: 24px;
+  color: #1A365D;
+  margin: 0;
+  outline: none;
 }
 
-.text-blue {
-  color: #1e40af; /* hps-blue */
-}
-
-.text-gold {
-  color: #d4af37; /* hps-gold */
-}
-
-.nav-links {
+nav {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.nav-links a {
+nav a {
   text-decoration: none;
-  color: #374151; /* text-gray-700 */
-  font-weight: 500;
-  transition: color 0.3s;
+  color: #1A365D;
+  font-weight: 600;
 }
 
-.nav-links a:hover {
-  color: #1e40af; /* hps-blue on hover */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-.btn-register {
-  padding: 0.5rem 1rem;
-  background-color: #1e40af; /* hps-blue */
-  color: white;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #1A365D;
+  margin: 4px 0;
 }
 
-.btn-register:hover {
-  background-color: #153191;
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
 }
 
-/* Hero Section */
-.hero {
-  padding-top: 120px; /* to offset fixed navbar */
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #fff;
+.mobile-menu a {
+  margin-bottom: 10px;
 }
 
-.hero h1 {
-  font-size: 2rem;
-  color: #1e293b;
-  margin-bottom: 1rem;
-}
+/* Media Queries */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
 
-.hero p {
-  font-size: 1.125rem;
-  color: #475569;
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
 }
