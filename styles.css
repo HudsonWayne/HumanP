@@ -94,18 +94,19 @@ body {
 /* Hero Content */
 .hero {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   padding: 0 1rem;
 }
 
 .hero h1 {
   font-size: 3.75rem;
-  line-height: 1.1;
+  line-height: 1;
   margin-bottom: 1rem;
   color: white;
+  font-weight: bolder;
 }
 
 .hero p {
-  font-size: 1.125rem;
+  font-size: 24px;
   color: white;
 }
