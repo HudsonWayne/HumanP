@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   overflow-y: scroll; /* always show vertical scrollbar */
 }
@@ -11,21 +12,19 @@ html {
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.6;
-  /* Gradient background covering whole page */
-  background-image: linear-gradient(to bottom right, #6b21a8, #1e40af); /* hps-purple to hps-blue */
+  color: white;
   min-height: 100vh;
-  color: white; /* default text color */
 }
 
 /* Navigation Bar */
 .navbar {
-  background-color: transparent; /* make navbar background transparent */
+  background-color: transparent;
   padding: 1rem 0;
   width: 100%;
   top: 0;
   z-index: 999;
-  /* Optional: add subtle shadow for separation */
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  background-image: linear-gradient(to bottom right, #6b21a8, #1e40af); /* purple to blue */
 }
 
 .container {
@@ -41,16 +40,15 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white; /* override to white for contrast */
+  color: white;
 }
 
 .text-white {
   color: white;
-  
 }
 
 .text-gold {
-  color: #d4af37; /* hps-gold */
+  color: #d4af37;
 }
 
 .nav-links {
@@ -61,13 +59,13 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: white; /* links white */
+  color: white;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #d4af37; /* gold on hover */
+  color: #d4af37;
 }
 
 .btn-register {
@@ -83,22 +81,26 @@ body {
   background-color: #153191;
 }
 
-/* Hero Section */
-.hero {
-  min-height: 100vh; /* take full height of viewport */
-  padding-top: 120px; /* to offset fixed navbar */
+/* Hero Page Section */
+.hero-page {
+  height: 70vh;
+  background-image: linear-gradient(to bottom right, #6b21a8, #1e40af); /* purple to blue */
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
-  text-align: center;
-  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
+/* Hero Content */
+.hero {
+  text-align: center;
+  max-width: 800px;
+  padding: 0 1rem;
+}
 
 .hero h1 {
-  font-size: 3.5rem;
-  width: 50%;
+  font-size: 3.75rem;
+  line-height: 1.1;
   margin-bottom: 1rem;
   color: white;
 }
