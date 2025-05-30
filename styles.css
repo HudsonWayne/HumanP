@@ -1,0 +1,95 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: white;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text-blue {
+  color: #1e40af; /* hps-blue */
+}
+
+.text-gold {
+  color: #d4af37; /* hps-gold */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151; /* text-gray-700 */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1e40af; /* hps-blue on hover */
+}
+
+.btn-register {
+  padding: 0.5rem 1rem;
+  background-color: #1e40af; /* hps-blue */
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+  background-color: #153191;
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 120px; /* to offset fixed navbar */
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: #475569;
+}
