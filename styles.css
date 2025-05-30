@@ -1,69 +1,103 @@
-body {
+/* Reset and base */
+* {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll; /* always show vertical scrollbar */
 }
 
-header {
-  background-color: #f5f5f5;
-  padding: 1rem 2rem;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* Gradient background covering whole page */
+  background-image: linear-gradient(to bottom right, #6b21a8, #1e40af); /* hps-purple to hps-blue */
+  min-height: 100vh;
+  color: white; /* default text color */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: transparent; /* make navbar background transparent */
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  /* Optional: add subtle shadow for separation */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; /* override to white for contrast */
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gold {
+  color: #d4af37; /* hps-gold */
+}
+
+.nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1.5rem;
 }
 
-h1 {
-  font-size: 24px;
-  color: #1A365D;
-  margin: 0;
-  outline: none;
-}
-
-nav {
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
+.nav-links a {
   text-decoration: none;
-  color: #1A365D;
-  font-weight: 600;
+  color: white; /* links white */
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+.nav-links a:hover {
+  color: #d4af37; /* gold on hover */
 }
 
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: #1A365D;
-  margin: 4px 0;
+.btn-register {
+  padding: 0.5rem 1rem;
+  background-color: rgba(26, 54, 93, 0.9);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: #f5f5f5;
-  padding: 1rem 2rem;
+.btn-register:hover {
+  background-color: #153191;
 }
 
-.mobile-menu a {
-  margin-bottom: 10px;
+/* Hero Section */
+.hero {
+  padding-top: 120px; /* to offset fixed navbar */
+  text-align: center;
+  padding: 4rem 2rem;
+  /* no background here because body already has gradient */
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
 
-  .hamburger {
-    display: flex;
-  }
-
-  .mobile-menu.show {
-    display: flex;
-  }
+.hero p {
+  font-size: 1.125rem;
+  color: white;
 }
