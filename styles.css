@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.6;
   /* Gradient background covering whole page */
   background-image: linear-gradient(to bottom right, #6b21a8, #1e40af); /* hps-purple to hps-blue */
@@ -21,7 +21,6 @@ body {
 .navbar {
   background-color: transparent; /* make navbar background transparent */
   padding: 1rem 0;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -47,6 +46,7 @@ body {
 
 .text-white {
   color: white;
+  
 }
 
 .text-gold {
@@ -85,14 +85,20 @@ body {
 
 /* Hero Section */
 .hero {
+  min-height: 100vh; /* take full height of viewport */
   padding-top: 120px; /* to offset fixed navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
   text-align: center;
   padding: 4rem 2rem;
-  /* no background here because body already has gradient */
 }
 
+
 .hero h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  width: 50%;
   margin-bottom: 1rem;
   color: white;
 }
