@@ -216,6 +216,11 @@ body {
     stroke: currentColor;
   }
 
+
+
+
+
+
 /* Section padding */
 .about-container {
   min-height: 100%;
@@ -232,12 +237,12 @@ body {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 10px 60px 10px 60px;
 }
 @media (min-width: 1024px) {
   .about-grid {
@@ -252,11 +257,14 @@ body {
 .text-content h2{
   color: rgb(26 54 93 / var(--tw-text-opacity, 1));
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 30px;
 }
-.text-content p{
+.text-content p {
   font-size: 18px;
+  margin-bottom: 1.5rem;
+
 }
+
 
 /* Heading */
 .heading {
@@ -293,12 +301,13 @@ body {
   text-align: center;
   color: #4b5563;
   font-size: 18px;
+  margin-right: 5px;
 }
 
 .stat-number {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #4b5563;
+  color: #1A365D;
   margin-bottom: 0.25rem;
   
 }
@@ -318,8 +327,8 @@ body {
 }
 
 .first-image {
-  width: 100%;
-  height: auto;
+  width: 700px;
+  height: 80%;
   object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
