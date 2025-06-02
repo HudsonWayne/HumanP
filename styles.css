@@ -473,16 +473,13 @@ body {
 
 /* Paragraph styling */
 .paragraph {
-  font-size: 1rem;
+  font-size: 18px;
   color: #1A365D; /* Gray tone */
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
-/* Bold theme part */
-.paragraph strong {
-  color: #000;
-}
+
 
 /* Row for details like date/location/attendees */
 .details-row {
