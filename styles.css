@@ -154,29 +154,66 @@ body {
   color: white;
 }
 
-/* Rates Notice */
-.rates {
-  display: inline-flex;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  padding: 0.75rem 1rem;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  margin-top: 30px;
-}
+/* Container Flexbox */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem; /* gap-4 = 1rem */
+  }
 
-.rates p {
-  font-size: 16px;
-  margin: 0;
-}
+  /* On small screens and above, row layout */
+  @media (min-width: 640px) {
+    .button-container {
+      flex-direction: row;
+    }
+  }
 
-.clock-icon {
-  margin-right: 0.5rem;
-  color: #d4af37;
-  flex-shrink: 0;
-}
+  /* Shared button base */
+  .btn-primary,
+  .btn-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* gap-2 = 0.5rem */
+    font-size: 1.125rem; /* text-lg = 18px */
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    background-color: #1A365D; /* purple shade */
+    color: white;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #581c87;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    background-color: transparent;
+    background-color: rgb(183, 119, 31);
+    color: white;
+
+    border: 2px solid #6b21a8;
+  }
+  .btn-secondary:hover {
+    background-color: rgb(118, 71, 6);
+    color: white;
+  }
+
+  /* SVG arrow icon */
+  .btn-primary svg {
+    width: 20px; /* roughly h-5 w-5 */
+    height: 20px;
+    stroke: currentColor;
+  }
+
+
+
