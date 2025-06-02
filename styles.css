@@ -218,9 +218,17 @@ body {
 
 
 /* Section padding */
-#about {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.about-container {
+  min-height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px; /* space below fixed navbar */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  margin-top: 100px;
 }
 
 /* Custom container styling (assumed utility) */
@@ -333,7 +341,10 @@ body {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 .image {
-  width: 100%;
+  width: 40%;
   height: 100%;
   object-fit: cover;
+}
+.first-image{
+  width: 100%;
 }
