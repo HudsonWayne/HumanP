@@ -457,6 +457,11 @@ body {
   margin: 0 auto 3rem auto;
   text-align: center;
 }
+.content-box h2{
+      font-size: 2.5em;
+    color: #1A365D;
+    line-height: 2.6rem;
+}
 
 /* Heading styles */
 .heading-2 {
@@ -469,7 +474,7 @@ body {
 /* Paragraph styling */
 .paragraph {
   font-size: 1rem;
-  color: #4B5563; /* Gray tone */
+  color: #1A365D; /* Gray tone */
   line-height: 1.6;
   margin-bottom: 2rem;
 }
