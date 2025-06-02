@@ -498,6 +498,7 @@ body {
 
 .icon {
   font-size: 1.3rem;
+  color: gold; /* Optional for coloring icons */
 }
 
 /* Grid box for the 3 cards */
