@@ -252,7 +252,10 @@ body {
 .text-content h2{
   color: rgb(26 54 93 / var(--tw-text-opacity, 1));
   font-weight: bolder;
-  font-size: 36px;
+  font-size: 40px;
+}
+.text-content p{
+  font-size: 18px;
 }
 
 /* Heading */
@@ -286,15 +289,18 @@ body {
   }
 }
 
-.stat {
+.stat p {
   text-align: center;
+  color: #4b5563;
+  font-size: 18px;
 }
 
 .stat-number {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #005fa3;
+  color: #4b5563;
   margin-bottom: 0.25rem;
+  
 }
 
 .stat-label {
