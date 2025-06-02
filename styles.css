@@ -107,7 +107,7 @@ body {
 }
 
 .hero p {
-  font-size: 24px;
+  font-size: 21px;
   color: white;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .rates p {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0; /* Remove default paragraph spacing */
 }
 
