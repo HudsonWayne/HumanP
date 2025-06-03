@@ -748,7 +748,7 @@ blockquote {
   position: relative;
   z-index: 20;
   padding: 4rem 1rem;
-  background: linear-gradient(to right, #1e3a8a, #1e40af); /* Optional background */
+  background-image: linear-gradient(to bottom right, #6b21a8, #1e40af); /* Optional background */
 }
 
 .container-call {
