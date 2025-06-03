@@ -787,3 +787,9 @@ blockquote {
   gap: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+@media (min-width: 768px) {
+  .cta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
