@@ -553,3 +553,191 @@ body {
 
 
 /* Container to align buttons horizontally on larger screens */
+
+
+.button-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* equivalent to Tailwind's gap-6 */
+  margin-top: 3rem; /* equivalent to Tailwind's mt-12 */
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .button-row {
+    flex-direction: row;
+  }
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #00558C; /* Custom blue */
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1.125rem; /* text-lg */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #003f66;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: #b7791F;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+  border: none; /* Ensures no border is shown */
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #925b0a;
+}
+
+
+
+/* testmonials */
+
+
+
+.section-padding {
+  padding: 80px 20px;
+  background: white;
+}
+
+.container-test {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-header h2 {
+  color: #004080;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.testimonial-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.testimonial-header p {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+blockquote {
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* PARTNERS */
+
+.partners-section {
+  padding: 3rem 1rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.content-center {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* .heading {
+  font-size: 2rem;
+  color: #004080; 
+  margin-bottom: 1rem;
+} */
+
+.subheading {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sponsor-button {
+  background-color: #b7791F;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+  border: none; /* Ensures no border is shown */
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.sponsor-button:hover {
+  background-color: #ea8600; /* hps-orange */
+}
