@@ -840,3 +840,6 @@ blockquote {
   background-color: #D4AF37; /* Replace with --hps-gold if defined */
   color: white;
 }
+.btn-gold:hover {
+  background-color: #e09114; /* Replace with --hps-orange if defined */
+}
