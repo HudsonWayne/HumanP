@@ -758,5 +758,6 @@ blockquote {
   text-align: center;
 }
 .call-to-action .heading {
-  
+  font-size: 2rem;
+  color: white;
 }
