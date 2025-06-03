@@ -760,4 +760,6 @@ blockquote {
 .call-to-action .heading {
   font-size: 2rem;
   color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
