@@ -807,5 +807,5 @@ blockquote {
 }
 
 .cta-buttons {
-  
+  display: flex;
 }
