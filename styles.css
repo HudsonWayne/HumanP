@@ -752,5 +752,6 @@ blockquote {
 }
 
 .container-call {
-  
+  max-width: 64rem; /* 1024px (Tailwind's max-w-4xl) */
+  margin-left: auto;
 }
