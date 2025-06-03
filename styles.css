@@ -801,3 +801,7 @@ blockquote {
   margin-bottom: 0.5rem;
 
 }
+
+.cta-text {
+  color: rgba(255, 255, 255, 0.8);
+}
