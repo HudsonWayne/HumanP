@@ -775,5 +775,6 @@ blockquote {
   padding: 2rem;
    border-radius: 0.5rem;
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+   max-width: 42rem; /* 672px (Tailwind's max-w-2xl) */
 
 }
