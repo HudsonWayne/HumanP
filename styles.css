@@ -814,3 +814,9 @@ blockquote {
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 640px) {
+  .cta-buttons {
+    flex-direction: row;
+  }
+}
