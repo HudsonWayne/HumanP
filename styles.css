@@ -833,3 +833,6 @@ blockquote {
   background-color: white;
   color: #1e3a8a;
 }
+.btn-white:hover {
+  background-color: #f3f4f6; /* Tailwind's gray-100 */
+}
