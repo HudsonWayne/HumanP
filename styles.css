@@ -865,5 +865,6 @@ blockquote {
 }
 
 .footer-col p {
-
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
