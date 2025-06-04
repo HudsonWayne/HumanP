@@ -844,3 +844,7 @@ blockquote {
   background-color: #e09114; /* Replace with --hps-orange if defined */
 }
 
+.footer {
+  background-color: #1a1a1a;
+  padding: 60px 20px;
+}
