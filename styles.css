@@ -853,4 +853,6 @@ blockquote {
 .footer-container {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
 }
