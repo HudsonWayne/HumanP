@@ -860,5 +860,6 @@ blockquote {
 
 .footer-col h3,
 .footer-col h4 {
-  
+  color: white;
+  margin-bottom: 20px;
 }
