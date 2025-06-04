@@ -857,3 +857,8 @@ blockquote {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.footer-col h3,
+.footer-col h4 {
+  
+}
