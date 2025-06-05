@@ -869,5 +869,5 @@ blockquote {
   line-height: 1.6;
 }
 .footer-col ul {
-  
+  list-style: none;
 }
