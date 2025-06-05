@@ -881,3 +881,7 @@ blockquote {
   text-decoration: none;
   transition: color 0.3s;
 }
+
+.footer-col ul li a:hover {
+  
+}
