@@ -898,3 +898,10 @@ blockquote {
 .social-icons a:hover {
   color: white;
 }
+
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
